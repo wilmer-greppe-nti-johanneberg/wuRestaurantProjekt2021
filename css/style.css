@@ -3,39 +3,58 @@
 }
 
 #maincontainer {
-    height: 1200px;
+    height: 1300px;
+    background-image: url('../img/wood1.jpg');
+    overflow: hidden;
     display: grid;
     grid-template-areas: 
     "he he"
     "na ma"
     ;
     grid-template-columns: 20% 80%;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 300px 1000px;
+    
 }
 
 #headcontainer {
     height: 100%;
     display: flex;
     grid-area: he;
-    background-color: blue;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 35px;
 }
 
 nav {
     grid-area: na;
-    background-color: greenyellow;
+    border-top: 5px;
+}
+
+#omosslink {
+    width: 90%;
+    background-color: blue;
 }
 
 main {
     grid-area: ma;
-    background-color: aqua;
 }
 
 .logo {
     width: 20%;
     height: auto;
-    padding: 10px;
 }
 
 .logo > img {
     width: 100%;
+    border-radius: 125px;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.rubrik > img {
+    height: 250px;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 25px;
+    transform: scaleX(1.1);
 }
