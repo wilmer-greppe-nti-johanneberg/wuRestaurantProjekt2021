@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
 * {
     margin: 0;
 }
 
 #maincontainer {
-    height: 1300px;
+    height: 1400px;
     background-image: url('../img/wood1.jpg');
     overflow: hidden;
     display: grid;
@@ -12,8 +14,7 @@
     "na ma"
     ;
     grid-template-columns: 20% 80%;
-    grid-template-rows: 300px 1000px;
-    
+    grid-template-rows: 400px 950px;
 }
 
 #headcontainer {
@@ -22,17 +23,71 @@
     grid-area: he;
     justify-content: space-around;
     align-items: center;
-    padding-right: 35px;
+    padding-right: 80px;
 }
 
-nav {
+#navlink {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     grid-area: na;
-    border-top: 5px;
+    width: 90%;
+    height: 100%;
+    background-color: rgb(89, 167, 255);
+    margin: 5%;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 30px;
 }
 
-#omosslink {
-    width: 90%;
-    background-color: blue;
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 80%;
+    height: 120px;
+    background-color: rgb(11, 125, 255);
+    font-size: 220%;
+    font-family: 'Russo One', sans-serif;
+    border-style: double;
+    border-width: 7px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.anchors {
+    color: black;
+}
+
+.totallynotfakereviews {
+    margin-bottom: 20px;
+    width: 80%;
+    height: 77%;
+    background-color: rgb(11, 125, 255);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-style: double;
+    border-width: 7px;
+    font-family: 'Russo One', sans-serif;
+    padding: 5px;
+}
+
+.totallynotfakereviews > .rubrik {
+    font-size: 190%;
+}
+
+#reviewcontainer {
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.review {
+    border-style: solid;
+    background-color: white;
 }
 
 main {
@@ -46,7 +101,7 @@ main {
 
 .logo > img {
     width: 100%;
-    border-radius: 125px;
+    border-radius: 500px;
     border-style: solid;
     border-width: 5px;
 }
@@ -56,5 +111,6 @@ main {
     border-style: solid;
     border-width: 5px;
     border-radius: 25px;
-    transform: scaleX(1.1);
+    transform: scaleX(1.3);
 }
+
